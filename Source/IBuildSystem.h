@@ -14,5 +14,7 @@ namespace Soup::BuildEx
 	public:
 		virtual void AddIncludePath(const char* path) = 0;
 		virtual void AddLibraryPath(const char* path) = 0;
+		virtual void AddStaticLibrary(const char* path) = 0;
+		virtual void AddPreprocessorDefinition(const char* path) = 0;
 	};
 }
