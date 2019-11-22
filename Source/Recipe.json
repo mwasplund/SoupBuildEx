@@ -1,5 +1,5 @@
 {
     "name": "Soup.BuildEx",
     "version": "1.0.0",
-    "public": "Module.cppm"
+    "public": "Module.cpp"
 }
