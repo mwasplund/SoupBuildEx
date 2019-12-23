@@ -1,4 +1,4 @@
-﻿export module Soup.BuildEx;
+﻿export module SoupBuildEx;
 
 #include "IBuildSystem.h"
 #include "IBuildTask.h"

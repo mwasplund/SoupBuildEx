@@ -1,0 +1,11 @@
+{
+    "name": "SoupBuildCore",
+    "type": "DynamicLibrary",
+    "version": "1.0.0",
+    "dependencies": [
+      "../Definition/"
+    ],
+    "source": [
+        "Main.cpp"
+    ]
+}
