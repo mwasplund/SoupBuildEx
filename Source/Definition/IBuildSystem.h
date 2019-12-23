@@ -7,14 +7,11 @@
 namespace Soup::BuildEx
 {
 	/// <summary>
-	/// Build Task Extension interface
+	/// Build System Extension interface
 	/// </summary>
 	export class IBuildSystem
 	{
 	public:
-		virtual void AddIncludePath(const char* path) = 0;
-		virtual void AddLibraryPath(const char* path) = 0;
-		virtual void AddStaticLibrary(const char* path) = 0;
-		virtual void AddPreprocessorDefinition(const char* value) = 0;
+		virtual void RegisterTask(std::shared_ptr<IBuildTask> task) = 0;
 	};
 }

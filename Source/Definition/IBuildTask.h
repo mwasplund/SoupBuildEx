@@ -13,5 +13,6 @@ namespace Soup::BuildEx
 	{
 	public:
 		virtual const char* GetName() = 0;
+		virtual void Execute() = 0;
 	};
 }
