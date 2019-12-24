@@ -12,7 +12,7 @@ public:
         return "my Build task";
     }
 
-    void Execute() override final
+    void Execute(Soup::BuildEx::IBuildState& state) override final
     {
     }
 };

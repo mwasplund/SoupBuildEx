@@ -1,5 +1,6 @@
 ﻿module;
 
+#include <any>
 #include <memory>
 
 export module SoupBuildEx;
