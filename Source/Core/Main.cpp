@@ -1,10 +1,10 @@
 ﻿#include <iostream>
 
-import SoupBuildEx;
+import SoupBuildExtension;
 
 #define DllExport __declspec( dllexport )
 
-class MyBuildTask : public Soup::BuildEx::IBuildTask
+class MyBuildTask : public Soup::Build::IBuildTask
 {
 public:
     const char* GetName() override final
@@ -12,12 +12,12 @@ public:
         return "my Build task";
     }
 
-    void Execute(Soup::BuildEx::IBuildState& state) override final
+    void Execute(Soup::Build::IBuildState& state) override final
     {
     }
 };
 
-DllExport int RegisterBuildExtension(Soup::BuildEx::IBuildSystem& buildSystem)
+DllExport int RegisterBuildExtension(Soup::Build::IBuildSystem& buildSystem)
 {
     buildSystem.RegisterTask(std::make_shared<MyBuildTask>());
     return 0;
